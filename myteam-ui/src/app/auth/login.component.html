@@ -3,7 +3,6 @@
     <h1 fxLayoutAlign="center" translate>APP_NAME</h1>
     <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="2rem">
       <h4 class="version">v{{ version }}</h4>
-      <app-language-selector></app-language-selector>
     </div>
   </div>
   <div class="login-container" fxLayout="row" fxLayoutAlign="center">
@@ -18,7 +17,7 @@
               matInput
               formControlName="username"
               autocomplete="username"
-              [placeholder]="'Username' | translate"
+              [placeholder]="'Username'"
               required
             />
             <mat-error *ngIf="loginForm.controls['username'].invalid && loginForm.controls['username'].touched">
@@ -31,7 +30,7 @@
               matInput
               formControlName="password"
               autocomplete="current-password"
-              [placeholder]="'Password' | translate"
+              [placeholder]="'Password'"
               required
             />
             <mat-error *ngIf="loginForm.controls['password'].invalid && loginForm.controls['password'].touched">
